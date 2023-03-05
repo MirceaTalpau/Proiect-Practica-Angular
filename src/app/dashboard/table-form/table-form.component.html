@@ -1,0 +1,52 @@
+<form nz-form [nzLayout]="'inline'" [formGroup]="validateForm" >
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your title!">
+        <nz-input-group nzPrefixIcon="title">
+          <input formControlName="title" nz-input placeholder="Movie title" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your Director!">
+        <nz-input-group nzPrefixIcon="Director">
+          <input formControlName="director" nz-input type="director" placeholder="Director Name" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input a valid number(40-350)">
+        <nz-input-group nzPrefixIcon="Length">
+          <input formControlName="length" nz-input (keypress)="numberOnly($event)" type="text" placeholder="Movie Length(min)" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input movie description!">
+        <nz-input-group nzPrefixIcon="Description">
+          <input formControlName="description" nz-input type="description" placeholder="Description" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Rating should be 1-100">
+        <nz-input-group nzPrefixIcon="Rating">
+          <input formControlName="rating" nz-input (keypress)="numberOnly($event)" type="text" placeholder="Rating" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+<nz-form-item>
+      <nz-form-control>
+        <button nz-button nzType="primary" [disabled]="!validateForm.valid" (click)="submitForm()">Submit</button>
+      </nz-form-control>
+    </nz-form-item>
+    
+    
+  </form>
+
+  
+    

@@ -1,0 +1,23 @@
+<nz-table #sortTable [nzData]="listOfData" nzTableLayout="fixed">
+    <thead>
+      <tr>
+        <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">
+          {{ column.title }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of sortTable.data">
+        <td>{{ data.title }}</td>
+        <td>{{ data.director }}</td>
+        <td>{{ data.length }}</td>
+        <td>{{ data.description }}</td>
+        <td>{{ data.rating }}</td>
+        <td><button nz-button nzType="primary" nzDanger [nzSize]="'small'" nzShape="circle" (click)="deleteMovie(data.id)"> 
+          <span nz-icon nzType="delete" nzTheme="outline"></span>
+        </button></td>
+      </tr>
+    </tbody>
+  </nz-table>
+
+

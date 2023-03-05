@@ -1,0 +1,36 @@
+{
+  "movies": [
+    {
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "length": "142",
+      "description": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+      "rating": "93",
+      "id": 2
+    },
+    {
+      "title": "    Cast & crew     User reviews     Trivia  IMDbPro Forrest Gump",
+      "director": "Robert Zemeckis",
+      "length": "142",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "rating": "88",
+      "id": 3
+    },
+    {
+      "title": "Catch Me If You Can",
+      "director": "Steven Spielberg",
+      "length": "141",
+      "description": "Barely 21 yet, Frank is a skilled forger who has passed as a doctor, lawyer and pilot. FBI agent Carl becomes obsessed with tracking down the con man, who only revels in the pursuit.",
+      "rating": "81",
+      "id": 4
+    },
+    {
+      "title": "Shutter Island",
+      "director": "Martin Scorsese",
+      "length": "124",
+      "description": "In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.",
+      "rating": "82",
+      "id": 5
+    }
+  ]
+}
